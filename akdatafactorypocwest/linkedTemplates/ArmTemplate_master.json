@@ -11,6 +11,10 @@
 			"type": "string",
 			"defaultValue": "https://adlsdffiles.dfs.core.windows.net/"
 		},
+		"akvADFHS_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://adfkeyvaultakrolebased.vault.azure.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -37,6 +41,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"akvADFHS_properties_typeProperties_baseUrl": {
+						"value": "[parameters('akvADFHS_properties_typeProperties_baseUrl')]"
 					},
 					"adlsdf_properties_typeProperties_url": {
 						"value": "[parameters('adlsdf_properties_typeProperties_url')]"

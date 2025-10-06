@@ -8,6 +8,9 @@
 		"adlsdf_properties_typeProperties_url": {
 			"value": "https://adlsdffiles.dfs.core.windows.net/"
 		},
+		"akvADFHS_properties_typeProperties_baseUrl": {
+			"value": "https://adfkeyvaultakrolebased.vault.azure.net/"
+		},
 		"containerUri": {
 			"value": ""
 		},

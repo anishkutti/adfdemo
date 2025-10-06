@@ -10,6 +10,10 @@
 		"adlsdf_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdffiles.dfs.core.windows.net/"
+		},
+		"akvADFHS_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://adfkeyvaultakrolebased.vault.azure.net/"
 		}
 	},
 	"variables": {
@@ -364,6 +368,19 @@
 				"type": "ManagedIdentity",
 				"typeProperties": {
 					"resourceId": "/subscriptions/86441fec-d478-46b7-9138-b07f2f22fbad/resourcegroups/datafactory/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mgid-datafactorypoc"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/akvADFHS')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureKeyVault",
+				"typeProperties": {
+					"baseUrl": "[parameters('akvADFHS_properties_typeProperties_baseUrl')]"
 				}
 			},
 			"dependsOn": []
