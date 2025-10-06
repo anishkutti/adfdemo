@@ -10,6 +10,9 @@
 		},
 		"akvADFHS_properties_typeProperties_baseUrl": {
 			"value": "https://adfkeyvaultakrolebased.vault.azure.net/"
+		},
+		"akvADFHS1_properties_typeProperties_baseUrl": {
+			"value": "https://adfkeyvaultakrolebased.vault.azure.net/"
 		}
 	}
 }
