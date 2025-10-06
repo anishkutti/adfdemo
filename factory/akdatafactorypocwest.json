@@ -1,0 +1,35 @@
+{
+	"name": "akdatafactorypocwest",
+	"properties": {
+		"globalParameters": {
+			"gbWebUrl": {
+				"type": "string",
+				"value": "test1"
+			}
+		},
+		"globalConfigurations": {
+			"mountedConfiguration": [
+				{
+					"workspaceId": "a98dcf14-c2ef-433e-bb86-b817e8d3e779",
+					"artifactId": "c60ad54f-ceb1-4716-81c1-1dbd5c705784"
+				},
+				{
+					"workspaceId": "c25e97b0-90d4-4421-bc4b-36a3b55b4679",
+					"artifactId": "73f7d7e7-5abf-4961-96a5-6c19c18bd343"
+				}
+			]
+		}
+	},
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "67e941fc-ebc9-4cba-9abf-244f3f2f068d",
+		"tenantId": "18918258-e1a6-41f9-800b-f7c3d7084d18",
+		"userAssignedIdentities": {
+			"/subscriptions/86441fec-d478-46b7-9138-b07f2f22fbad/resourcegroups/datafactory/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mgid-datafactorypoc": {
+				"clientId": "56050b81-caa8-46bf-af5d-8240a226f854",
+				"principalId": "130f5f40-5fe1-42fb-9e4e-cd0bf9978e60"
+			}
+		}
+	}
+}

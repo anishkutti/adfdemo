@@ -1,0 +1,19 @@
+{
+	"name": "Binary1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adlsdf",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "userinfo.csv",
+				"fileSystem": "sampledata"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

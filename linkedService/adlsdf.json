@@ -1,0 +1,15 @@
+{
+	"name": "adlsdf",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsdffiles.dfs.core.windows.net/",
+			"credential": {
+				"referenceName": "mgid-datafactory",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}
