@@ -1,0 +1,14 @@
+{
+	"name": "ls_adls_dev",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlswestdata001.dfs.core.windows.net/",
+			"credential": {
+				"referenceName": "mgid-datafactory",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}
