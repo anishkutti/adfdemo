@@ -1,0 +1,14 @@
+{
+	"name": "AzureKeyVault1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://adfkeyvaultakrolebased.vault.azure.net/",
+			"credential": {
+				"referenceName": "mgid-datafactory",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}
